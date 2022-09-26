@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page #01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./menu.png" alt="Image menu" class="menu-img">
+            <img src="./logo.png" alt="Image logo" class="logo">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Trabalhe Conosco</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp-container">
+            <img src="./lamp.png" alt="Image lamp" class="lamp">
+            <img src="./light.png" alt="Image light" class="light" id="light">
+        </div>
+        <div class="text-container">
+            <h1>Lorem<br>Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore quis dignissimos nesciunt maiores minus fugit! Sint voluptatibus, perferendis quis veritatis, quaerat iure, cumque ducimus ea quas voluptate libero eveniet.</p>
+            <a href="#" class="linkProducts">Conheça nossos produtos</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+     </div>
+
+     <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+     </script>
+    
+</body>
+</html>
